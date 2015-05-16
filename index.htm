@@ -27,26 +27,36 @@
 						</ul>
 					</li>
 					<li><a href = "https://github.com/daniel514" target = "_blank"> GitHub </a></li>
-					<li><a href = "#"> Contacts </a></li>
+					<li><a href = "#contact" data-toggle="modal"> Contacts </a></li>
 				<ul>
 			</div>
 		</div>
 
-			<div class = "jumbotron background-img">
-				<div class = "row">
-					<div class = "col-md-9">
-						<div class = "container">
-							<h1> Materialize Ideas!</h1>
-							<h2> The site is used to display my knowledge about Bootstraps <br>
-								and provide a place for descriptions of my school and personal projects
-							</h2>
-						</div>
-					</div>
-					<div class = "col-md-1">
-						<img src = "img/profilePicture.jpg" class = "img-circle" alt="Daniel Hsiao" width = "300" height = "300">
+		<div class = "jumbotron background-img">
+			<div class = "row">
+				<div class = "col-md-9">
+					<div class = "container">
+						<h1> Where Ideas Come to Life</h1>
+						<h2> The site is used to display my knowledge about Bootstraps <br>
+							and provide a place for descriptions of my school and personal projects
+						</h2>
 					</div>
 				</div>
+				<div class = "col-md-1">
+					<img src = "img/profilePicture.jpg" class = "img-circle" alt="Daniel Hsiao" width = "300" height = "300">
+				</div>
 			</div>
+		</div>
+		<div class = "jumbotron">
+			<div class = "container">
+				<p> <q>Design is the method of putting form and content together. Design, just as art, has multiple definitions;
+                    there is no single definition. Design can be art. Design can be aesthetics. Design is so simple, 
+                    that's why it is so complicated.</q></p>
+				<p class="text-right"> by Paul Rand
+				</p>
+			</div>
+			</div>
+		</div>
 
 		<div class = "navbar navbar-default navbar-fixed-bottom navbar-right">
 			<div class = "container">
@@ -55,7 +65,36 @@
 			
 		</div>
 		
-		
+		<div class = "modal fade" id = "contact" role = "dialog">
+            <div class = "modal-dialog">
+                <div class = "modal-content">
+                    <div class = "modal-header">
+                        <p>Contact Me Through Email.</p>
+                    </div>
+                    <div class = "modal-body">
+                        <p>Let me know if you have any suggestions about the site!</p>
+                        <form>
+                            <div class="form-group">
+                                <labl for="inputName">Name</labl>
+                                <input type="name" class="form-control" id = "inputName" placeholder="Enter Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail">Email Address</label>
+                                <input type="email" class="form-control" id = "inputEmail" placeholder="Enter Email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputComment">Comments</label>
+                                <textarea type="text" class="form-control" id ="inputComment" placeholder="Enter Comments" required></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class = "modal-footer">
+                        <button type="submit" class="btn btn-success">Submit</button>
+                        <button class="btn pull-right" data-dismiss="modal" aria-hidden="true">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 		
 		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
