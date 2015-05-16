@@ -1,0 +1,12 @@
+.background-img{
+	background: url(../img/green_water.jpg);
+    color:white;
+	background-attachment:fixed;
+	min-height: 300px;
+	margin-top: 0px;
+	margin-bottom:8px;
+}
+.stroke{
+	color:#fff;
+	-webkit-text-stroke: 2px #000;
+}
