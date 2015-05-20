@@ -1,16 +1,11 @@
 .background-img{
-	background: url(../img/green_water.jpg);
-    color:white;
+	background: url(../img/mount.jpg);
 	background-attachment:fixed;
-	min-height: 300px;
+    color:black;
+    min-height: 700px;
 	margin-top: 0px;
-	margin-bottom:8px;
+    padding-top: 100px;
 }
-.stroke{
-	color:#fff;
-	-webkit-text-stroke: 2px #000;
-}
-
 /* Hover Effect from thecodeplayer.com */
 .navbar li{
 	width: 120px; 
@@ -23,4 +18,45 @@
 .navbar li:hover{
     background:#666;
 	padding-left: 5px;
+}
+canvas{
+    background:white;
+    color:black;
+}
+.quotes{
+    background: white;
+}
+
+.about-me{
+    background: url(../img/river.jpg);
+	background-attachment:fixed;
+    color:white;
+}
+
+.jumbotron .row .col-md-6 .container{
+    background: rgba(245, 245, 245, 0.6);
+    color:black;
+    border-radius:10px;
+}
+.skills{
+    background:white;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.row-centered{
+    text-align:center;
+}
+.col-centered{
+    text-align:center;
+}
+
+.skills img{
+    opacity: 0.6;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+}
+
+.skills img:hover{
+    opacity: 1.0;
 }

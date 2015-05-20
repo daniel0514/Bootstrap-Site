@@ -8,7 +8,7 @@
 	</head>
 	
 	<body>
-		<div class = "navbar navbar-inverse">
+		<div class = "navbar navbar-inverse navbar-fixed-top">
 			<button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
 				<span class = "icon-bar"></span>
 				<span class = "icon-bar"></span>
@@ -16,38 +16,45 @@
 				
 			</button>
 			<div class = "collapse navbar-collapse navHeaderCollapse">
-				<ul class = "nav navbar-nav navbar-right">
-					<li><a href = "#"> About Me </a></li>
-					<li class = "dropdown">
-						<a href = "#" class = "dropdown-toggle" data-toggle = "dropdown"> Projects <b class = "caret"></b></a>
-						<ul class = "dropdown-menu">
-							<li><a href = "#"> Project 1 </a></li>
-							<li><a href = "#"> Project 2 </a></li>
-							<li><a href = "#"> Project 3 </a></li>
-						</ul>
-					</li>
-					<li><a href = "https://github.com/daniel514" target = "_blank"> GitHub </a></li>
-					<li><a href = "#contact" data-toggle="modal"> Contacts </a></li>
-				<ul>
+                <span>
+                    <a href = "#" class="scroll-top">
+                        <canvas id="logo" height="50px"></canvas>
+                    </a>
+                </span>
+                <span>
+                    <ul class = "nav navbar-nav navbar-right">
+                        <li><a href = "#" class="scroll-link" data-id="about-me"> About Me </a></li>
+                        <li class = "dropdown">
+                            <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown"> Projects <b class = "caret"></b></a>
+                            <ul class = "dropdown-menu">
+                                <li><a href = "#"> Project 1 </a></li>
+                                <li><a href = "#"> Project 2 </a></li>
+                                <li><a href = "#"> Project 3 </a></li>
+                            </ul>
+                        </li>
+                        <li><a href = "https://github.com/daniel514" target = "_blank"> GitHub </a></li>
+                        <li><a href = "#contact" data-toggle="modal"> Contacts </a></li>
+                    <ul>
+                </span>
 			</div>
 		</div>
 
 		<div class = "jumbotron background-img">
 			<div class = "row">
-				<div class = "col-md-9">
+
+				<div class = "col-md-5">
 					<div class = "container">
 						<h1> Where Ideas Come to Life</h1>
-						<h2> The site is used to display my knowledge about Bootstraps <br>
-							and provide a place for descriptions of my school and personal projects
-						</h2>
 					</div>
 				</div>
-				<div class = "col-md-1">
+                <div class = "col-md-4">
+                </div>
+                <div class = "col-md-2">
 					<img src = "img/profilePicture.jpg" class = "img-circle" alt="Daniel Hsiao" width = "300" height = "300">
 				</div>
 			</div>
 		</div>
-		<div class = "jumbotron">
+		<div class = "jumbotron quotes" >
 			<div class = "container">
 				<p> <q>Design is the method of putting form and content together. Design, just as art, has multiple definitions;
                     there is no single definition. Design can be art. Design can be aesthetics. Design is so simple, 
@@ -55,11 +62,59 @@
 				<p class="text-right"> by Paul Rand
 				</p>
 			</div>
-			</div>
 		</div>
+        
+        <div id="about-me" class="page-section">
+            <div class = "jumbotron about-me">
+                <div class = "row">
+                    <div class = "col-md-4">
+                        <div class = "container">
+                            <h1>About Me</h1>
+                        </div>
+                    </div>
+                    <div class = "col-md-2">
+                    </div>    
+                    <div class = "col-md-6">
+                        <div class = "container description">
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I'm a third year Computer Science student at UBC. My programming experience is mainly with Java, but I'm currently learning different languages to expand my knowledge about software and web development. I'm highly interested in mobile app and website development.</p>
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My current languages involve Java, C, Python, HTML and CSS. My current focus is to develop enough knowledge for JavaScript (AngularJS and React.js) and HTML5 for better website development</p>
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Throughout the school years, I've taken courses on Internet Computing, Databases, Software Enginnering (development cycles), and Intermediate Algorithms. I have knowledge on the fundamental of the Internet like internet protocols (TCP and UDP), DNS, the protocol stack, packets, etc. I also have experience with agile development cycle, as one of my projects was developed in agile style with weekly scrum meeting, acceptance criteria, etc. From the database course, I gained valuable knowledge about relational database, SQL language, and DataWarehousing, and I had hands on experience developing a website involving MySQL database with three other students in the course.  </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron skills">
+            <div class = "row row-centered">
+                <div class = "col-md-4 col-centered">
+                    <img src="./img/skills/java.png" alt="" style="width:300px;height:300px">
+                </div>
+                 <div class = "col-md-4 col-centered">
+                    <img src="./img/skills/python.jpg" alt="" style="width:300px;height:300px">
+                </div>
+                <div class = "col-md-4 col-centered">
+                    <img src="./img/skills/htmlcss.png" alt="" style="width:300px;height:300px">
+                </div>
+            </div>
+            <div class = "row row-centered">
+                <div class = "col-md-4 col-centered">
+                    <img src="./img/skills/c.png" alt="" style="width:300px;height:300px">
+                </div>
+                <div class = "col-md-4 col-centered">
+                    <img src="./img/skills/eclipse.png" alt="" style="width:300px;height:300px">
+                </div>
+                 <div class = "col-md-4 col-centered">
+                    <img src="./img/skills/bracket.png" alt="" style="width:300px;height:300px">
+                </div>
+            </div>
+            <div class = "row row-centered">
+                <img src="./img/skills/mysql.png" alt="" style="height:300px">
+            </div>
+        
+        </div>
 
 		<div class = "navbar navbar-default navbar-fixed-bottom navbar-right">
-			<div class = "container">
+			<div class = "container ">
 				<p class = "navbar-text pull-right">Site by Daniel Hsiao</p>
 			</div>
 			
@@ -99,5 +154,42 @@
 		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 		<script src="js/bootstrap.js"></script>
+        <script type="text/javascript">
+            
+            $(document).ready(function(){
+                //navigation click actions
+                $('.scroll-link').on('click', function(event){
+                    event.preventDefault();
+                    var sectionID = $(this).attr("data-id");
+                    scrollToID('#' + sectionID, 750);
+                });
+                //scroll to top action
+                $('.scroll-top').on('click', function(event){
+                    event.preventDefault();
+                    $('html, body').animate({scrollTop:0}, 'slow');
+                });
+                //mobile nav toggle
+                $('#nav-toggle').on('click', function(event){
+                    event.preventDefault();
+                    $('#main-nav').toggleClass("open");
+                });
+            });
+            //Scroll function
+            function scrollToID(id, speed){
+                var offSet = 50;
+                var targetOffset = $(id).offset().top - offSet;
+                var mainNav = $('#main-nav');
+                $('html,body').animate({scrollTop:targetOffset}, speed);
+                if(mainNav.hasClass("open")){
+                    mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+                    mainNav.removeClass("open");
+                }
+            }
+            if(typeof console === "undefined"){
+                console = {
+                    log: function(){}
+                };
+            }
+        </script>
 	</body>
 </html>
