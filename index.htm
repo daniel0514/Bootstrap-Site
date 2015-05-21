@@ -193,10 +193,8 @@
                     log: function(){}
                 };
             }
-            var time  = setInterval(function(){timeRefresh()},1000);
-            function timeRefresh(){
-                document.getElementById("time").innerHTML= Date();
-            }
+            var time  = setInterval(function(){
+                $("#time").html(Date())},1000);
         </script>
 	</body>
 </html>
