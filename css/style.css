@@ -19,10 +19,6 @@
     background:#666;
 	padding-left: 5px;
 }
-canvas{
-    background:white;
-    color:black;
-}
 .quotes{
     background: white;
 }
@@ -60,3 +56,10 @@ canvas{
 .skills img:hover{
     opacity: 1.0;
 }
+.navbar-fixed-bottom{
+    bottom:0;
+}
+.skills .container{
+    margin-left:0px;
+}
+

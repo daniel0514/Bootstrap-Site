@@ -17,11 +17,6 @@
 			</button>
 			<div class = "collapse navbar-collapse navHeaderCollapse">
                 <span>
-                    <a href = "#" class="scroll-top">
-                        <canvas id="logo" height="50px"></canvas>
-                    </a>
-                </span>
-                <span>
                     <ul class = "nav navbar-nav navbar-right">
                         <li><a href = "#" class="scroll-link" data-id="about-me"> About Me </a></li>
                         <li class = "dropdown">
@@ -85,6 +80,7 @@
             </div>
         </div>
         <div class="jumbotron skills">
+            <div class = "container left-pull"><h1>Skills</h1></div>
             <div class = "row row-centered">
                 <div class = "col-md-4 col-centered">
                     <img src="./img/skills/java.png" alt="" style="width:300px;height:300px">
@@ -113,9 +109,9 @@
         
         </div>
 
-		<div class = "navbar navbar-default navbar-fixed-bottom ">
+		<div class = "navbar navbar-default navbar-fixed-bottom">
             <div class="row">
-                <div class = "col-md-6" id = "time">
+                <div class = "col-md-6 time" id = "time">
                 </div>
                 <div class = "col-md-6 pull-right">
                     <p class = "navbar-text pull-right">Site by Daniel Hsiao</p>
@@ -196,8 +192,7 @@
             }
             var time  = setInterval(function(){timeRefresh()},1000);
             function timeRefresh(){
-                var d = new Date();
-                document.getElementById("time").innerHTML= d.toLocaleDateString() + " " +d.toLocaleTimeString();
+                document.getElementById("time").innerHTML= Date();
             }
         </script>
 	</body>
