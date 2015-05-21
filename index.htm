@@ -113,10 +113,14 @@
         
         </div>
 
-		<div class = "navbar navbar-default navbar-fixed-bottom navbar-right">
-			<div class = "container ">
-				<p class = "navbar-text pull-right">Site by Daniel Hsiao</p>
-			</div>
+		<div class = "navbar navbar-default navbar-fixed-bottom ">
+            <div class="row">
+                <div class = "col-md-6" id = "time">
+                </div>
+                <div class = "col-md-6 pull-right">
+                    <p class = "navbar-text pull-right">Site by Daniel Hsiao</p>
+                </div>
+            </div>
 			
 		</div>
 		
@@ -189,6 +193,11 @@
                 console = {
                     log: function(){}
                 };
+            }
+            var time  = setInterval(function(){timeRefresh()},1000);
+            function timeRefresh(){
+                var d = new Date();
+                document.getElementById("time").innerHTML= d.toLocaleDateString() + " " +d.toLocaleTimeString();
             }
         </script>
 	</body>
