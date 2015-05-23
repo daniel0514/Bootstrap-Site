@@ -1,6 +1,6 @@
 .breadCalc{
     width:inherit;
-    height:100%;
+    min-height: 100%;
     width:100%;
     background-color:black;
 }
@@ -12,6 +12,23 @@
 
 .breadCalc .col-md-8{
     padding-top: 20%;
-    padding left: 10%;
-    
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.ParkNEat{
+    width:inherit;
+    min-height:100%;
+    width:100%;
+    background-color:black;
+}
+.ParkNEat #pneTitle{
+    padding-top: 10%;
+    padding-right:10%;
+}
+
+.ParkNEat .col-md-8{
+    padding-top: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
