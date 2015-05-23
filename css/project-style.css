@@ -1,0 +1,17 @@
+.breadCalc{
+    width:inherit;
+    height:100%;
+    width:100%;
+    background-color:black;
+}
+
+.breadCalc #breadCalcTitle{
+    padding-top: 10%;
+    padding-left: 10%;
+}
+
+.breadCalc .col-md-8{
+    padding-top: 20%;
+    padding left: 10%;
+    
+}
