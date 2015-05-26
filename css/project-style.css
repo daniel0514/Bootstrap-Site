@@ -22,12 +22,12 @@
     width:100%;
     background-color:black;
 }
-.ParkNEat #pneTitle{
+.ParkNEat .col-md-4{
     padding-top: 10%;
     padding-right:10%;
 }
 
-.ParkNEat .col-md-8{
+.ParkNEat #pneDescr{
     padding-top: 20%;
     padding-left: 10%;
     padding-right: 10%;
