@@ -32,3 +32,20 @@
     padding-left: 10%;
     padding-right: 10%;
 }
+
+.shopOnline{
+    width:inherit;
+    min-height:100%;
+    width:100%;
+    background-color:black;
+}
+.shopOnline #title{
+    padding-top: 10%;
+    padding-left: 10%;
+}
+
+.shopOnline #desc{
+    padding-top: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
+}

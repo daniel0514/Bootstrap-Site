@@ -1,4 +1,4 @@
-<DOCTYPE! html>
+DOCTYPE! html>
 <html>
     <head>
 		<title>Projects</title>
@@ -17,22 +17,22 @@
 			<div class = "collapse navbar-collapse navHeaderCollapse">
                 <span>
                     <ul class = "nav navbar-nav navbar-right">
-                        <li><a href = "index.htm#about-me" class="scroll-link" data-id="about-me"> About Me </a></li>
+                        <li><a href = "index.htm#about_me"> About Me </a></li>
                         <li class = "dropdown">
                             <a href = "index.htm" class = "dropdown-toggle" data-toggle = "dropdown"> Projects <b class = "caret"></b></a>
                             <ul class = "dropdown-menu">
-                                <li><a href = "projects.html"> Project 1 </a></li>
-                                <li><a href = "projects.html"> Project 2 </a></li>
-                                <li><a href = "projects.html"> Project 3 </a></li>
+                                <li><a href = "#breadCal"> Bread Calculator </a></li>
+                                <li><a href = "#parkNEat"> ParkNEat </a></li>
+                                <li><a href = "#shopOnline"> Shop Online! </a></li>
                             </ul>
                         </li>
                         <li><a href = "https://github.com/daniel514" target = "_blank"> GitHub </a></li>
                         <li><a href = "#contact" data-toggle="modal"> Contacts </a></li>
-                    <ul>
+                    </ul>
                 </span>
 			</div>
 		</div>
-        <div class="jumbotron breadCalc">
+        <div class="jumbotron breadCalc" id="breadCal">
             <div class="row">
                 <div class="col-md-4" id="breadCalcTitle">
                     <h1>Bread Calculator</h1>
@@ -46,7 +46,7 @@
                 </div>
             </div>
         </div>
-         <div class="jumbotron ParkNEat">
+        <div class="jumbotron ParkNEat" id="parkNEat">
             <div class="row">
                 <div class="col-md-8" id="pneDescr">
                     <p>Ever had the situation when you arrive at the restaurant but unable to find a parking spot nearby? You are in luck! ParkNEat will find nearby parking spots for you (however we do not guarantee the spot is empty). ParkNEat is a web application that locates restaurants near you (or a location of your choice) and display the parking spots near the restaurants of your choice. ParkNEat also allows you to see comments and rating from other users. So what are you waiting for? Start using ParkNEat</p>
@@ -58,14 +58,14 @@
                 </div>
             </div>
         </div>
-        <div class="jumbotron OnlineShopping">
+        <div class="jumbotron shopOnline" id="shopOnline">
             <div class="row">
                 <div class="col-md-4 pull-right" id="title">
-                    <h1>Online Shopping</h1>
+                    <h1>Shop Online!</h1>
                 </div>
                 <div class="col-md-8" id="desc">
-                    <p></p>
-                    <p></p>
+                    <p>Shop Online! is a website made for online shopping experience (for custoemrs) and inventory management (for managers and clerks). Customers can added items (if available) to their baskets and checkout items at once. Managers or clerks can create reports of top selling items, daily sells, and inventory counts. The website also has a login system to determine user information once accounts are created.</p>
+                    <p>Shop Online is written in PHP and HTML, and the website uses MySQL database for data storage. SQL queries are specifically formulated based on user inputs and reflects exactly the behaviour we expect on the SQL server. The results of queries are then displayed in a readable format without any modification to the results For security, the website uses POST method in form handling to hide information from users. Passwords are encrypted with Blowfish Encryption and then stored in the database. </p>
 
                 </div>
             </div>
@@ -73,5 +73,6 @@
         <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 		<script src="js/bootstrap.js"></script>
+        <script src="js/basic.js"></script>
     </body>
 </html>

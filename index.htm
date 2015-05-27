@@ -18,13 +18,13 @@
 			<div class = "collapse navbar-collapse navHeaderCollapse">
                 <span>
                     <ul class = "nav navbar-nav navbar-right">
-                        <li><a href = "index.htm" class="scroll-link" data-id="about-me"> About Me </a></li>
+                        <li><a href = "#about_me"> About Me </a></li>
                         <li class = "dropdown">
                             <a href = "index.htm" class = "dropdown-toggle" data-toggle = "dropdown"> Projects <b class = "caret"></b></a>
                             <ul class = "dropdown-menu">
-                                <li><a href = "projects.html"> Project 1 </a></li>
-                                <li><a href = "projects.html"> Project 2 </a></li>
-                                <li><a href = "projects.html"> Project 3 </a></li>
+                                <li><a href = "projects.html#breadCal"> Bread Calculator </a></li>
+                                <li><a href = "projects.html#parkNEat"> ParkNEat </a></li>
+                                <li><a href = "projects.html#shopOnline"> Shop Online! </a></li>
                             </ul>
                         </li>
                         <li><a href = "https://github.com/daniel514" target = "_blank"> GitHub </a></li>
@@ -59,22 +59,20 @@
 			</div>
 		</div>
         
-        <div id="about-me" class="page-section">
-            <div class = "jumbotron about-me">
-                <div class = "row">
-                    <div class = "col-md-4">
-                        <div class = "container">
-                            <h1>About Me</h1>
-                        </div>
+        <div class = "jumbotron about-me" id="about_me">
+            <div class = "row">
+                <div class = "col-md-4">
+                    <div class = "container">
+                        <h1>About Me</h1>
                     </div>
-                    <div class = "col-md-2">
-                    </div>    
-                    <div class = "col-md-6">
-                        <div class = "container description">
-                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I'm a third year Computer Science student at UBC. My programming experience is mainly with Java, but I'm currently learning different languages to expand my knowledge about software and web development. I'm highly interested in mobile app and website development.</p>
-                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My current languages involve Java, C, Python, HTML and CSS. My current focus is to develop enough knowledge for JavaScript (AngularJS and React.js) and HTML5 for better website development</p>
-                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Throughout the school years, I've taken courses on Internet Computing, Databases, Software Enginnering (development cycles), and Intermediate Algorithms. I have knowledge on the fundamental of the Internet like internet protocols (TCP and UDP), DNS, the protocol stack, packets, etc. I also have experience with agile development cycle, as one of my projects was developed in agile style with weekly scrum meeting, acceptance criteria, etc. From the database course, I gained valuable knowledge about relational database, SQL language, and DataWarehousing, and I had hands on experience developing a website involving MySQL database with three other students in the course.  </p>
-                        </div>
+                </div>
+                <div class = "col-md-2">
+                </div>    
+                <div class = "col-md-6">
+                    <div class = "container description">
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I'm a third year Computer Science student at UBC. My programming experience is mainly with Java, but I'm currently learning different languages to expand my knowledge about software and web development. I'm highly interested in mobile app and website development.</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My current languages involve Java, C, Python, HTML and CSS. My current focus is to develop enough knowledge for JavaScript (AngularJS and React.js) and HTML5 for better website development</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Throughout the school years, I've taken courses on Internet Computing, Databases, Software Enginnering (development cycles), and Intermediate Algorithms. I have knowledge on the fundamental of the Internet like internet protocols (TCP and UDP), DNS, the protocol stack, packets, etc. I also have experience with agile development cycle, as one of my projects was developed in agile style with weekly scrum meeting, acceptance criteria, etc. From the database course, I gained valuable knowledge about relational database, SQL language, and DataWarehousing, and I had hands on experience developing a website involving MySQL database with three other students in the course.  </p>
                     </div>
                 </div>
             </div>
@@ -157,45 +155,8 @@
 		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 		<script src="js/bootstrap.js"></script>
+        <script src="js/basic.js"></script>
         <script type="text/javascript">
-            
-            $(document).ready(function(){
-                //navigation click actions
-                $('.scroll-link').on('click', function(event){
-                    event.preventDefault();
-                    var sectionID = $(this).attr("data-id");
-                    scrollToID('#' + sectionID, 750);
-                });
-                //scroll to top action
-                $('.scroll-top').on('click', function(event){
-                    event.preventDefault();
-                    $('html, body').animate({scrollTop:0}, 'slow');
-                });
-                //mobile nav toggle
-                $('#nav-toggle').on('click', function(event){
-                    event.preventDefault();
-                    $('#main-nav').toggleClass("open");
-                });
-            });
-            //Scroll function
-            function scrollToID(id, speed){
-                var offSet = 50;
-                var targetOffset = $(id).offset().top - offSet;
-                var mainNav = $('#main-nav');
-                $('html,body').animate({scrollTop:targetOffset}, speed);
-                if(mainNav.hasClass("open")){
-                    mainNav.css("height", "1px").removeClass("in").addClass("collapse");
-                    mainNav.removeClass("open");
-                }
-            }
-            if(typeof console === "undefined"){
-                console = {
-                    log: function(){}
-                };
-            }
-            var time  = setInterval(function(){
-                $("#time").html(Date())
-            },1000);
         </script>
 	</body>
 </html>
