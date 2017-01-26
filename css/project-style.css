@@ -1,4 +1,4 @@
-.breadCalc{
+.OneClickUpload{
     width:inherit;
     min-height: 100%;
     width:100%;
@@ -16,13 +16,13 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aebcbf', endColorstr='#0a0809',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
 }
 
-.breadCalc #breadCalcTitle{
+.OneClickUpload #breadCalcTitle{
     padding-top: 10%;
     padding-left: 10%;
     color:black;
 }
 
-.breadCalc .col-md-8{
+.OneClickUpload .col-md-8{
     padding-top: 20%;
     padding-left: 10%;
     padding-right: 10%;
