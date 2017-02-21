@@ -1,6 +1,5 @@
 .background-img{
-	background: url(../img/mount.jpg);
-	background-attachment:fixed;
+    background: url(../img/mount.jpg) fixed;
     color:black;
     min-height: 700px;
 	margin-top: 0px;
@@ -19,14 +18,19 @@
     background:#666;
 	padding-left: 5px;
 }
+
 .quotes{
     background: white;
+    -webkit-text-stroke: 1px black;
 }
 
 .about-me{
-    background: url(../img/river.jpg);
-	background-attachment:fixed;
+    background: url(../img/river.jpg) fixed;
     color:white;
+}
+
+.stroke_white{
+    -webkit-text-stroke: 1px white;
 }
 
 .jumbotron .row .col-md-6 .container{
